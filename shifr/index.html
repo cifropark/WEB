@@ -1,0 +1,481 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Podkova');
+  @import url('https://fonts.googleapis.com/css?family=Pacifico');
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+    *{
+    margin:0px;
+    padding: 0px;
+    }
+    body{
+      background: linear-gradient(to right, rgb(214,209,217),rgb(240,240,240), rgb(214,209,217));
+    }
+
+    .kript{
+      width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .dip{
+      box-shadow: 9px 5px 18px -3px #888888;
+      background-image: url(picture/dippic.png);
+      background-size: cover;
+      margin: auto;
+      width: 800px;
+      height: 500px;
+      border: 10px solid white;
+    }
+    .termin{
+      font-size: 74px;
+      font-family: 'Podkova',serif;
+      text-shadow: 1px 1.5px grey;
+      font-weight: bold;
+      text-align: left;
+      margin: 20px;
+    }
+    .description{
+      text-align: right;
+      line-height: 45px;
+      font-size: 40px;
+      margin-bottom: 40px;
+      font-family: 'Pacifico', cursive;
+    }
+
+      .ust, .shi, .zha{
+        display: inline-block;
+        text-decoration: none;
+        padding: 0px 15px;
+        font-size: 32px;
+        line-height: 40px;
+        font-family: 'Podkova',serif;
+        color: white;
+      }
+      .ust{
+      background-color: black;
+      }
+      .shi{
+        background-color: #975E8D;
+      }
+      .zha{
+        background-color:rgb(108,147,165);
+      }
+    .ustr-enigm>p{
+      font-size: 44px;
+      line-height: 60px; /*это нужно для выравнивания текста по вертикали,
+      если нужно по середине выровнить, то значение = высоте блока*/
+      font-family: 'Podkova',serif;
+      background-color: black;
+      height: 60px; /*увеличила высоту блока*/
+      width: 400px;
+      color: white;
+      text-align: center;
+      margin: 150px 0px 70px 0px;
+    }
+    .ustr-enigm .pic-enigm{
+      display: inline-block;
+      vertical-align: top;
+      background-image: url(picture/enigm.png);
+      background-size: cover;
+      height: 500px;
+      width: 300px;
+    }
+    .ustr-enigm .exp{
+      width: 750px;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      padding-left: 200px;
+
+    }
+    .ustr-enigm .exp>p{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Podkova',serif;
+    }
+    .ustr-enigm .line{
+      color: black;
+      width: 750px;
+      height: 1px;
+      border-top: 2px solid black;
+      margin: 20px 0px;
+    }
+
+    .ustr-enigm .exp-text{
+      color: black;
+      text-align: left;
+      font-size: 26px;
+      font-family: 'Roboto Slab',serif;
+      width: 740px;
+    }
+
+
+
+    .pic-fialka{
+      display: inline-block;
+      vertical-align: top;
+      background-image: url(picture/fialka.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 100px;
+      height: 300px;
+      width: 400px;
+    }
+    .ustr-fialka .exp{
+      width: 750px;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      padding-left: 100px;
+      padding-top: 100px;
+
+    }
+    .ustr-fialka .exp>p{
+    font-size: 80px;
+    font-weight: bold;
+    font-family:  'Podkova',serif;
+    }
+    .ustr-fialka .line{
+      color: black;
+      width: 750px;
+      height: 1px;
+      border-top: 2px solid black;
+      margin: 20px 0px;
+    }
+
+    .ustr-fialka .exp-text{
+      color: black;
+      text-align: left;
+      font-size: 26px;
+      font-family: 'Roboto Slab',serif;
+      width: 740px;
+    }
+    .expsh{
+
+    }
+    #shifr{
+      font-size: 44px;
+      line-height: 60px; /*это нужно для выравнивания текста по вертикали,
+      если нужно по середине выровнить, то значение = высоте блока*/
+      font-family: serif;
+      background-color: #975E8D;
+      height: 60px; /*увеличила высоту блока*/
+      width: 400px;
+      color: white;
+      text-align: center;
+      margin: 200px 0px 50px 0px;
+    }
+    .expsh>p{
+      font-size: 80px;
+      font-weight: bold;
+      margin: 80px 0px 70px 500px;
+      font-family:  'Podkova',serif;
+    }
+    .pic-mas{
+      display: inline-block;
+      vertical-align: top;
+      background-image: url(picture/maso.png);
+      background-size: cover;
+      height: 324px;
+      width: 270px;
+    }
+    .mas{
+      display: flex;
+      justify-content: space-around;
+      width: 1100px;
+    }
+    .mas-opr{
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 200px;
+    }
+    .pic-mas-key{
+      background-image: url(picture/key.png);
+      background-size: cover;
+      height: 36px;
+      width: 75px;
+      margin: auto;
+    }
+    .mas-opr>p{
+      color: black;
+      text-align: left;
+      font-size: 26px;
+      font-family: serif;
+      width: 400px;
+      margin-top: 20px;
+      font-family: 'Roboto Slab',serif;
+    }
+
+
+    .expsh-k{
+    margin-top: 50px;
+    }
+
+    .expsh-k>p{
+    font-size: 80px;
+    font-weight: bold;
+    margin: 90px 0px 50px 500px;
+    font-family:  'Podkova',serif;
+    }
+    .expsh-block{
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
+    }
+    .opr-k{
+      margin-left: 100px;
+    }
+    .pic-k{
+    vertical-align: top;
+    background-image: url(picture/book.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 337px;
+    width: 400px;
+    margin-left: 50px;
+  }
+  .pic-k-key{
+    background-image: url(picture/key.png);
+    background-size: cover;
+    height: 36px;
+    width: 75px;
+    margin: 20px auto;
+  }
+  .opr-k>p{
+    color: black;
+    text-align: left;
+    font-size: 26px;
+    font-family: serif;
+    width: 500px;
+    font-family: 'Roboto Slab',serif;
+  }
+  .cesar{
+    margin-left: 50px;
+  }
+  .cesar>p{
+    font-size: 80px;
+    font-weight: bold;
+    margin: 90px 0px 70px 500px;
+    font-family:  'Podkova',serif;
+  }
+  .cesar-block{
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
+  }
+  .cesar-pic{
+    background-image: url(picture/cesar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 500px;
+
+  }
+  .cesar-opr{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+  }
+  .cesar-opr>p{
+    color: black;
+    text-align: left;
+    font-size: 26px;
+    font-family: serif;
+    width: 500px;
+    margin: 20px;
+    font-family: 'Roboto Slab',serif;
+  }
+  textarea{
+    width:650px;
+    height:100px;
+    font-size: 24px;
+    font-family: serif;
+    color:purple;
+    font-family: 'Podkova',serif;
+    margin-left: 40%
+  }
+
+
+  .to_code>p{
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+    margin: 100px 0px 50px 0px;
+    background-color:rgb(108,147,165);
+    font-size:44px;
+    font-family: 'Podkova',serif;
+    text-transform: uppercase;
+    color:white;
+  }
+  .code{
+    width: 1000px;
+
+  }
+
+  .code>p{
+    font-size:26px;
+    font-family: serif;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab',serif;
+    margin-left: 40%;
+  }
+  .code>a{
+    display:inline-block;
+    vertical-align: top;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    background-color: rgb(240,240,240);
+    border: 1px solid white;
+    box-shadow: 9px 5px 18px -3px #888888;
+    padding: 5px 10px;
+    margin: 40px 0 0 30px;
+    text-align: center;
+    color:purple;
+    font-size: 30px;
+    font-family: 'Amatic SC', serif;
+
+  }
+  .pic-hand{
+  width: 350px;
+  display: inline-block;
+  margin-right: 20px;
+  }
+  #ss2{
+    margin-bottom: 100px;
+  }
+  </style>
+</head>
+<body>
+<!--ГЛАВНАЯ СТРАНИЦА -->
+  <div class="kript">
+    <div class="dip"></div>
+      <p class="termin">Криптография</p>
+      <p class="description">наука о методах обеспечения <br>конфиденциальности</p>
+      <a class="ust" href="#ustroistva">УСТРОЙСТВА</a>
+      <a class="shi" href="#shifri">ШИФРЫ</a>
+      <a class="zha" href="#shifrovat">ЗАШИФРОВАТЬ СЛОВА</a>
+  </div>
+<!--УСТРОЙСТВА -->
+  <div class="ustr-enigm" name="ustroistva">
+    <a name="ustroistva"></a>
+    <p>УСТРОЙСТВА</p>
+    <div class="pic-enigm"></div>
+    <div class='exp'>
+      <p>Энигма</p>
+      <div class="line"></div>
+      <div class="exp-text">
+        <p>Шифровальная машина, использовавшаяся нацистами во времена
+        Второй Мировой войны.<br><br>
+        Принцип ее работы таков: есть несколько колес и клавиатура. На экране оператору показывалась
+        буква, которой шифровалась соответствующая буква на клавиатуре.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ustr-fialka">
+    <div class="pic-fialka"></div>
+    <div class='exp'>
+      <p>Фиалка М-125</p>
+      <div class="line"></div>
+      <div class="exp-text">
+        <p>М-125, с кодовым название Фиалка, представляет собой электромеханическую 10
+          роторную шифровальную машину.
+          Её часто называют «внучкой» Энигмы. <br><br> Механическая часть включала в себя
+           клавиатуру, набор вращающихся дисков — роторов
+            и ступенчатогo механизма, двигающего роторы при нажатии на клавишу.
+            Сам по себе ротор производил очень простой тип шифрования: элементарный шифр замены.
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- ШИФРЫ -->
+    <a name="shifri"></a>
+    <p id='shifr'>ШИФРЫ</p>
+      <div class='expsh'>
+        <p>Масонский шифр</p>
+        <div class='mas'>
+          <div class="pic-mas"></div>
+          <div class='mas-opr'>
+            <div class="pic-mas-key"></div>
+            <p>Каждой букве ставится в соответствие специальный символ.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='expsh-k'>
+        <p>Книжный шифр</p>
+        <div class='expsh-block'>
+          <div class="pic-k"></div>
+          <div class='opr-k'>
+            <div class="pic-k-key"></div>
+            <p> Шифр, в котором каждый элемент текста (каждая буква или слово)
+            заменяется на указатель (например, номер страницы, строки и/или столбца).
+            <br><br>Важно, что бы текст или книга были у отправителя и получателя одинаковыми.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='cesar'>
+        <p>Шифр Цезаря</p>
+        <div class='cesar-block'>
+          <div class="cesar-pic"></div>
+          <div class='cesar-opr'>
+            <div class="pic-mas-key"></div>
+            <p>Шифр, в котором каждый символ заменяется буквой, находящейся в алфавите на некоторое постоянное
+              число позиций левее или правее. Например, в шифре со сдвигом на 3 символа буква А заменяется на Г,
+               буква Б - буквой Д и так далее.<br><br> Шифр назван в честь римского императора Гая Юлия Цезаря, использовавшего
+               его для секретной переписки со своими генералами.</p>
+          </div>
+        </div>
+      </div>
+<!-- ШИФРАТОР -->
+      <div class="to_code">
+        <a name="shifrovat"></a>
+      	<p>Зашифровать слова</p>
+      	<section>
+          <input type="radio" name="code_type" id="rev">
+          <input type="radio" name="code_type" id="rep">
+          <input type="radio" name="browser" value="ie"> Internet Explorer<Br>
+ <input type="radio" name="browser" value="opera"> Opera<Br>
+ <input type="radio" name="browser" value="firefox"> Firefox<Br>
+      	<div class="code">
+      		<p>Введите слово или предложение, которое необходимо зашифровать:</p>
+      		<textarea type="text" id="ss" placeholder="Ввести"></textarea>
+
+            <div class="pic-hand"><image src="picture/hand.png" width='350px'></div>
+            <a href="javascript:coder()">Шифровать</a>
+
+      		<textarea type="text" id="ss2"></textarea>
+      	</div>
+
+      	<!--<div class="pic-hand"><image src="picture/hand.png" width='350px'></div>-->
+      	</section>
+      </div>
+      <script>
+       if(document.getElementById('rev').checked==true){
+         coder();
+       }
+      		document.getElementById("ss2").value="";
+      		var coder=function(){
+      		var word = ss.value;
+          word=word.toLowerCase();
+      		var word_new="";
+      		var i=word.length-1;
+      		while(i>=0){
+      			word_new=word_new+word[i];
+      			i--;
+      		}
+          word_new=word_new[0].toUpperCase()+word_new.slice(1);
+      		ss2.value=word_new;
+      		document.getElementById('ss2').value=word_new;
+      		}
+
+      </script>
+
+</body>
+</html>
+</html>
