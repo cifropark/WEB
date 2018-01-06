@@ -1,0 +1,128 @@
+﻿<html>
+<head>
+
+<title>Снежная Миля</title>
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<!--<script  type="text/javascript" src = "code.js"></script>-->
+
+<style>
+  body {
+    background: url(town3-dark.png) no-repeat center center fixed;
+    background-size: cover;
+
+  }
+  @keyframes gg {
+    0%{
+
+    bottom: -500px;
+  }
+    20%{
+
+      bottom: -400px;
+
+    }
+    40%{
+
+      bottom: -300px;
+
+
+    }
+    60%{
+
+      bottom: -200px;
+
+    }
+    80%{
+
+      bottom: -100px;
+
+    }
+    100%{
+
+      bottom: -50px;
+
+    }
+
+  }
+  #block {
+    position: absolute;
+
+    bottom: -500px;
+    animation: gg 2s 0.5s linear forwards;
+  }
+
+      }
+</style>
+<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class = "container-flued text-center" id='block'>
+  <img id="medved"  style = "height: 400px;" src="медведь.png">
+  <p style = "position: relative; bottom: 45px;"><button href="#myModal" class="btn btn-primary" data-toggle="modal">Спросить</button></p>
+</div>
+
+<!-- Модальные окна -->
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Заголовок модального окна -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Грозный и милый мишка увидев человека:</h4>
+      </div>
+      <!-- Основное содержимое модального окна -->
+      <div class="modal-body">
+        <h3>
+          Свет ищешь?! А я не помогу, лучше сядь и поешь моих печенек. Мне и Северного Сияния хватает.
+        </h3>
+
+          <p>-Его тоже не будет.</p>
+          <p>-О нет! Ладно отгадай загадку и я скажу где Енот.</p>
+          <p>-Я знаю где Енот.</p>
+          <p>-Я не отпущу если не угадаешь! И будешь есть только печенье всю свою жизнь!</p>
+            <p>С пахучей тонкой кожурой,</p>
+            <p>Они украсят в доме стол,</p>
+          <p>Как настроения витамины.</p>
+            <p>Узнает каждый...</p>
+          <button id = "btnot1" class = "btn btn-danger">Печенье</button>
+          <button id = "btnot2" class = "btn btn-danger">Мандарины</button>
+          <button id = "btnot3" class = "btn btn-danger">Лимоны</button>
+        <script>
+        btnot1.onclick = function() {
+          window.location.href = '5.html';
+          }
+          btnot2.onclick = function() {
+            window.location.href = '14.html';
+            }
+            btnot3.onclick = function() {
+              window.location.href = '5.html';
+              }
+
+
+        </script>
+
+      </div>
+      <!-- Футер модального окна -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

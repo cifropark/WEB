@@ -1,0 +1,113 @@
+﻿<html>
+<head>
+
+<title>Снежная Миля</title>
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<!--<script  type="text/javascript" src = "code.js"></script>-->
+
+<style>
+  body {
+    background: url(town4-dark.png) no-repeat center center fixed;
+    background-size: cover;
+
+  }
+  @keyframes gg {
+    0%{
+
+    bottom: -500px;
+  }
+    20%{
+
+      bottom: -400px;
+
+    }
+    40%{
+
+      bottom: -300px;
+
+
+    }
+    60%{
+
+      bottom: -200px;
+
+    }
+    80%{
+
+      bottom: -100px;
+
+    }
+    100%{
+
+      bottom: -50px;
+
+    }
+
+  }
+  #block {
+    position: absolute;
+
+    bottom: -500px;
+    animation: gg 2s 0.5s linear forwards;
+  }
+      
+</style>
+<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class = "container-flued text-center" id='block'>
+  <img id="enot"  style = "height: 400px;" src="енот.png">
+  <p style = "position: relative; bottom: 45px;"><button href="#myModal" class="btn btn-primary" data-toggle="modal">Спросить</button></p>
+</div>
+
+<!-- Модальные окна -->
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Заголовок модального окна -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Енотик вылез из норки и говорит:</h4>
+      </div>
+      <!-- Основное содержимое модального окна -->
+      <div class="modal-body">
+        <h3>
+        Принес печенье?! Отлично! Мне уже хочется увидеть рассвет! Олень вооон там!
+        </h3>
+
+
+          <button id = "btnot1" class = "btn btn-danger">Идти вооон туда</button>
+
+        <script>
+        btnot1.onclick = function() {
+          window.location.href = '15.html';
+          }
+
+
+        </script>
+
+      </div>
+      <!-- Футер модального окна -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

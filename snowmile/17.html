@@ -1,0 +1,139 @@
+<html>
+<head>
+
+<title>Снежная Миля</title>
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<!--<script  type="text/javascript" src = "code.js"></script>-->
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  <style>
+    @keyframes startshow {
+      0%{top: 100%;}
+      20%{top: 80%;}
+      40%{top: 60%;}
+      60%{top: 40%;}
+      80%{top: 20%;}
+      100%{top: 0%;}
+    }
+    @keyframes showtext {
+      0%{opacity: 0}
+      10%{opacity: 0.1}
+      20%{opacity: 0.2}
+      30%{opacity: 0.3}
+      40%{opacity: 0.4}
+      50%{opacity: 0.5}
+      60%{opacity: 0.6}
+      70%{opacity: 0.7}
+      80%{opacity: 0.8}
+      90%{opacity: 0.9}
+      100%{opacity: 1}
+
+
+
+    }
+    @keyframes showph {
+      0%{opacity: 1}
+      10%{opacity: 0.9}
+      20%{opacity: 0.8}
+      30%{opacity: 0.7}
+      40%{opacity: 0.6}
+      50%{opacity: 0.5}
+      60%{opacity: 0.4}
+      70%{opacity: 0.3}
+      80%{opacity: 0.2}
+      90%{opacity: 0.1}
+      100%{opacity: 0}
+
+
+
+    }
+
+    @keyframes showphoto {
+    100%{opacity: 1}
+      0%{opacity: 0}
+
+    }
+    body{
+      background-image: url(town.png);
+      width: 100vw;
+      height: 100vh;
+    }
+    section {
+        background-image: url(town2.png);
+        width: 100vw;
+        height: 100vh;
+        animation: showph 3s forwards;
+    }
+
+    #eyes {
+      width: 200px;
+      height: 200px;
+    }
+    #start {
+      position: absolute;
+      top:100%;
+      animation: startshow 2s linear forwards;
+    }
+    #predislov{
+      color: white;
+      opacity: 0;
+      animation: showtext 6s 0.5s forwards;
+      font-size: 24px;
+      font-family: sans-serif;
+      top: 15%;
+      left: 30%;
+      position:absolute;
+    }
+    #btnot{
+      opacity: 0;
+      animation: showtext 3s 0.5s forwards;
+
+    }
+
+  </style>
+
+
+<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<section></section>
+  <div id='predislov' class = "text-center">
+    <p>
+      <span>Ты вернул свет в городок!</span> <br>Ну, возможно, это просто электричество подключили...
+    </p>
+    <p>
+      Но все животные очень рады!
+    </p>
+    <p>
+      Спасибо тебе!
+    </p>
+
+  </div>
+
+  <!--
+  <div id="start">
+
+  <img id="eyes" class = "img-circle text-center" src="eyes.jpg">
+
+  </div>
+  -->
+  <script>
+  btnot.onclick = function() {
+  window.location.href = '3.html';
+  }
+
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
