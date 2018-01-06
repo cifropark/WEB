@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+	div{
+	background-image:url(robert.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	height:400px;
+	width:380px;
+	margin:100px auto;
+	}
+	a{
+	color:yellow;
+	font-size:25px;
+	margin: 0px 50px;
+	text-decoration:none;
+	font-family: 'Press Start 2P', cursive;
+	}
+	#link{
+	text-align:center;
+	margin-top: 100px;
+	}
+    body{
+    	background-image:url(bg1.png);
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+	#answer{
+	color:white;
+	font-size:30px;
+	text-align:center;
+	font-family: 'Press Start 2P', cursive;
+	color:white;
+	}
+</style>
+</head>
+<body>
+		<p id="link">
+			<a href="javascript:magic()">Задать вопрос</a>
+			<a href="javascript:fant()">Играть в фанты</a>
+		</p>
+		<p id="answer"></p>
+	<div>
+
+
+	</div>
+
+	<script>
+		var magic=function(){
+			var quest=prompt("Какой вопрос ты хочешь задать Роберту?");
+			var ans=['у тебя все получится',"'Роберт говорит 'нет'",'отличная идея','почему бы и нет','не стоит','ты на верном пути','не в этот раз','давай, у тебя все получится','подожди подходящего момента','лучше в другой раз','не сомневайся в успехе','удача будет с тобой','да, да, да!'];
+			var vibor=Math.floor(Math.random()*8);
+			if (quest==''){
+				alert('Ты не задал вопрос!');
+			}else if(quest==null){
+				alert("Ты что передумал?");
+			}
+			else{
+			document.getElementById("answer").innerHTML="<p>"+ans[vibor]+"</p>";
+			}
+		}
+		var fant=function(){
+			var figure=prompt("Введи число");
+			var ans2=['используя столько слов расскажи о себе','столько известных личностей назови',' столько раз прыгни на левой ноге','столько съешь конфет',' назови столько столиц мира','назови столько видов спорта','назови столько праздников', 'используя столько прилагательных, опиши себя'];
+			var vibor2=Math.floor(Math.random()*8);
+			if (figure==''){
+				alert('Ты не указал число!');
+			}else if(figure==null){
+				alert('Ну вот даже не поиграли!')
+			}
+			else{
+				document.getElementById("answer").innerHTML="<p>"+ans2[vibor2]+"</p>";
+			}
+		}
+	</script>
+</body>
+</html>
