@@ -1,0 +1,207 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+@import url('https://fonts.googleapis.com/css?family=Arsenal');
+
+.page{
+	background-color: #FFFFFF;
+	margin: auto;
+	width: 1200px;
+	height: 940px;
+	background-image: url(../img/bgi_index.png);
+	background-repeat: no-repeat;
+	background-position: 0px 200px;
+}
+
+.header{
+	display: flex;
+	position: relative;
+	z-index: 2;
+	top:0;
+	left: 0;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 30px;
+	font-size: 0.6em;
+	background-color: white;
+	height: 96px;
+}
+
+.obr>span{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+
+#strogino{
+	display: inline-block;
+	background-repeat: no-repeat;
+	width:150px;
+	height:86px;
+	background-image: url(../img/strogino.png);
+	background-size: contain;
+	left: 0;
+	top: 0;
+}
+
+.registration{
+	border-left: #808080 solid 1px;
+	position:absolute;
+	top:5px;
+	right:0;
+	height: 45px;
+	line-height: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.registration>a{
+	margin-left: 4px;
+	text-decoration: none;
+	color: blue;
+	display: block;
+}
+
+#link2{
+	padding-top: 9px;
+	color: green;
+	border-bottom: 1px dashed green;
+}
+
+nav{
+	height: 70px;
+	background-color: rgb(83, 80, 91);
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Poiret One', cursive;
+	position: relative;
+	z-index: 2;
+}
+
+.menu>a{
+	font-family: 'Poiret One', cursive;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin: 0px 15px;
+	line-height: 68px;
+	position: relative;
+	display: inline-block;
+}
+
+.menu>a:hover{
+	color: #b3dee7;
+}
+
+#kruzhki{
+	color: #b3dee7;
+}
+
+#logo{
+	height: 200px;
+	background-image: url(../img/logo.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 350px;
+	position: absolute;
+	left:450px;
+	top:190px;
+}
+
+.filters{
+	width: 1000px;
+	/*justify-content: space-around; это свойство применяется только вместе с display:flex*/
+	margin-left: 50px;
+	top: 390px;
+	position: absolute;
+	height: 100px;
+}
+
+.filter-type{
+	display: flex;
+	justify-content: flex-start;
+	margin: 10px 0px;
+	font-family: 'Arsenal', sans-serif;
+	font-size: 16px;
+}
+h3{
+		line-height: 22px;
+}
+.filter-type{
+	width: 700px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.filter{
+	text-transform: lowercase;
+	border: 1px solid #53505b;
+	background-color: white;
+	font-size: 11px;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin-left: 10px;
+	height: 13px;
+	line-height: 13px;/*для выравнивания текста по вертикали*/
+	color: #000000;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.classes{
+	height: 500px;
+	position: absolute;
+	top: 490px;
+	width: 1200px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.classes>div{
+	height: 333px;
+	box-shadow: 0 0 12px rgba(0,0,0,0.5);
+	background-color: #FFFFFF;
+	width: 300px;
+	display: flex;
+	position: relative;
+}
+
+#picture{
+	width: 292px;
+	height:280px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image: url(../img/web_design.png);
+	background-size: contain;
+	background-position: 8px 8px;
+}
+
+.text{
+	width: 100%;
+	position: absolute;
+	top: 280px;
+	padding-top: 12px;
+	font-size: 1em;
+	height: 53px;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+#picture2{
+	width: 292px;
+	height:280px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 8px 8px;
+}
+
+#picture3{
+	width: 292px;
+	height:280px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 8px 8px;
+}

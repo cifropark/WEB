@@ -1,0 +1,252 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+@import url('https://fonts.googleapis.com/css?family=Arsenal');
+@import url('https://fonts.googleapis.com/css?family=Marmelad|Oswald');
+@keyframes move{
+from {	transform: translateY(-500px);}
+to {	transform: translateY(1px);}
+}
+body{
+	background-image: url(../img/bgi2.jpg);
+	background-repeat: repeat;
+}
+.page{
+	background-color: #FFFFFF;
+	margin: auto;
+	width: 1300px;
+	height: 1240px;
+	font-size: x-large;
+	display: flex;
+	flex-direction: column;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 2;
+	top:0;
+	left: 0;
+	padding: 15px 0 5px 0;
+	font-family: 'Arsenal', sans-serif;
+	line-height: 30px;
+	font-size: 0.6em;
+	background-color: white;
+	height: 120px;
+	padding-left: 40px;
+}
+
+#strogino-name>span{
+	font-size: 18px;
+	font-weight: bold;
+}
+#strogino-label{
+	display:flex;
+}
+#strogino-name{
+padding-top: 20px;
+box-sizing: border-box;
+font-family: 'Arsenal', sans-serif;
+font-size: 18px;
+}
+#strogino-logo{
+	background-repeat: no-repeat;
+	width:100px;
+	height:86px;
+	background-image: url(../img/strogino.png);
+	background-size: contain;
+	margin-top: 10px;
+}
+
+
+#enter{
+	margin: 10px 40px 0 0;
+	text-decoration: none;
+	display: block;
+	color:grey;
+	text-align: right;
+	font-family:'Amatic SC', cursive;
+	padding-top: 22px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+#enter:hover{
+background: linear-gradient(135deg, pink 20%, blue 70%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+nav{
+	height: 70px;
+	background-color: rgb(83, 80, 91);
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	z-index: 2;
+}
+
+.menu>a{
+font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin: 0px 15px;
+	line-height: 68px;
+	position: relative;
+	display: inline-block;
+letter-spacing: 1.3;
+
+}
+
+.menu a:first-child{
+	color: #b3dee7;
+}
+
+.menu>a:hover{
+	color: #b3dee7;
+}
+
+#welcome{
+	display: flex;
+	font-size: 0.8em;
+	animation: move 3s forwards;
+	position: absolute;
+	top:200px;
+display: none;
+	z-index: 1;
+	background-color: #d9e3ef;
+	height: 290px;
+	width: 1200px;
+	font-family: 'Arsenal', sans-serif;
+
+}
+
+#picture{
+	width:400px;
+	background-image: url(../img/table.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#information{
+	margin-top: 25px;
+	line-height: 30px;
+	justify-content: flex-start;
+}
+
+#major{
+	font-size: 1.5em;
+	text-align: left;
+}
+
+.manage{
+	margin-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: space-between;
+}
+
+.manage>a{
+	font-size: 0.8em;
+	text-decoration: none;
+	color: #FFFFFF;
+	border: solid 1px #FFFFFF;
+	padding: 9px 20px;
+}
+
+#more{
+	border: solid 1px #FFFFFF;
+	background-color: #8a9098;
+	}
+
+.logo{
+	height: 400px;
+	background-image: url(../img/logo.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 450px;
+	margin-top: 10%;
+}
+
+.intro{
+	margin-top: 50px;
+	height: 600px;
+
+	display: flex;
+	justify-content: space-around;
+	width: 1200px;
+
+}
+
+#text{
+	margin-left: 100px;
+	margin-top:100px;
+	text-align: center;
+	color: #000000;
+}
+
+#t1{
+	font-size: 1em;
+	font-family: 'Poiret One', cursive;
+	margin-bottom: 40px;
+	line-height: 35px;
+}
+
+#t2{
+	font-size: 1.7em;
+	font-family:'Amatic SC', cursive;
+}
+
+#laptop{
+	height: 500px;
+	width: 900px;
+	background-image: url(../img/laptop.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.classification{
+	width: 1000px;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 50px;
+	top: 840px;
+	position: absolute;
+	height: 100px;
+}
+
+.classification>div{
+	font-size: 0.6em;
+	border-radius: 6px;
+	padding: 5px 6px;
+	height: 18px;
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#activity1{
+	background: linear-gradient(to right, #d3dae4, #46556c);
+}
+
+#activity2{
+	background: linear-gradient(to right, #49586f, #b0c3e3);
+}
+
+#activity3{
+	background: radial-gradient(#d6def5, #8dabdd);
+}
+
+#activity4{
+	background-color: #333f4f;
+}
+
+#apeal{
+	text-align: center;
+	font-size: 50px;
+	color:rgb(146,208,80);
+	font-family:'Amatic SC', cursive;
+	letter-spacing: 1.5;
+	display: block;
+}
