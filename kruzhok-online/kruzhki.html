@@ -1,0 +1,204 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+	<div class="page">
+		<header>
+			<div id="logo1"></div>
+			<div id="logo2"></div>
+		</header>
+		<nav>
+			<div class="menu">
+				<a href="index.html">Главная</a>
+				<a id="kruzhki" href="#">Кружки</a>
+				<a href="master_classes.html">Мастер-классы</a>
+				<a href="videoconferences.html">Видеоконференции</a>
+				<a href="contacts.html">Контакты</a>
+			</div>
+		</nav>
+<!--Фильтры-->
+
+    <div class="filters">
+			<div class="filter-type">
+				<h3>Возраст</h3>
+					<a class='filter year' id='y7' href="#">7-9 лет</a>
+					<a class='filter year' id='y10' href="#">10-12 лет</a>
+					<a class='filter year' id='y13' href="#">13-14 лет</a>
+					<a class='filter year' id='y14' href="#">от 14 лет</a>
+			</div>
+				<div class="filter-type">
+					<h3>Направленность</h3>
+						<a class='filter type' id='tnat' href="#">Естественнонаучная</a>
+						<a class='filter type' id='tsoc' href="#">Социально-педагогическая</a>
+						<a class='filter type' id='ttech' href="#">Техническая</a>
+						<a class='filter type' id='ttour' href="#">Туристико-краеведческая</a>
+						<a class='filter type' id='tphis' href="#">Физкультурно-спортивная</a>
+						<a class='filter type' id='tart' href="#">Художественная</a>
+				</div>
+			<div class="filter-type">
+				<h3>Форма обучения</h3>
+					<a class='filter study' id='sself' href="#">Самостоятельная</a>
+					<a class='filter study' id='sdis' href="#">Дистанционная</a>
+					<a class='filter study' id='sdif' href="#">Смешанная</a>
+			</div>
+		</div>
+<!--Сетка курсов-->
+			<div class="courses">
+				<div id='web' class='box y10 ttech sdis'><div></div><a href="kruzhok-web.html">Основы веб-дизайна</a></div>
+				<div id='rob' class='box y10 y13 ttech sdis'><div></div><a href="#">Робототехника</a></div>
+				<div id='3d' class='box y10 y13 y14 ttech sself'><div></div><a href="#">3D моделирование</a></div>
+				<div id='math' class='box y7 y10 y13 tnat sdif'><div></div><a href="#">Решение математических задач повышенной сложности</a></div>
+				<div id='let`' class='box y14 tart sself'><div></div><a href="#">Леттеринг</a></div>
+				<div id='ill' class='box y13 tart sdis'><div></div><a href="#">Adobe Illustrator</a></div>
+				<div id='pesh' class='box y13 y14 ttour sdif'><div></div><a href="#">Пешеходный туризм</a></div>
+				<div id='yoga' class='box y7 y10 y13 tphis sdif'><div></div><a href="#">Йога</a></div>
+				<div id='psi' class='box y14 tsoc sself'><div></div><a href="#">Основы психологии</a></div>
+			</div>
+<footer>
+	<p id="about">Дистанционное дополнительное образование<br>
+		Государственное бюджетое образовательное учеждение г.Москвы <br>
+		Центр детского творчества «Строгино»<br><br><br>
+	<span>Графика для сайта <a href="http://www.freepik.com/"> Designed by Freepik</a></span></p>
+	<p id="mail">distance.cdt@gmail.com</p>
+</footer>
+		<script>
+			//var filterid;//id выбранного фильтра
+			//при загрузке все фильтры белые
+			for(var i=0; i<document.getElementsByClassName('filter').length;i++){
+				document.getElementsByClassName('filter')[i].style.backgroundColor='rgb(245, 245, 245)'
+			}
+			//при загрузке все блоки с курсами отображены
+			for(var ii=0; ii<document.getElementsByClassName('box').length;ii++){
+					document.getElementsByClassName('box')[ii].style.display='block';
+				}
+			//изменение цвета фильтра при нажатии на него
+			for(i=0; i<document.getElementsByClassName('filter').length;i++){
+				document.getElementsByClassName('filter')[i].onclick = function() {
+					//filterid=this.id;
+					if(this.style.backgroundColor=='rgb(245, 245, 245)'){
+						this.style.backgroundColor='rgb(83, 80, 91)';
+						this.style.color='white';
+						setfilter();
+						}
+					else{
+							this.style.backgroundColor='rgb(245, 245, 245)';
+							this.style.color='black';
+							setfilter();
+						}
+				}
+			}
+	function setfilter(){
+		//скрываем все курсы
+		for(var ii=0; ii<document.getElementsByClassName('box').length;ii++){
+				document.getElementsByClassName('box')[ii].style.display='none';
+			}
+		var yarr=[];
+		var tarr=[];
+		var sarr=[];
+		var settarr=[];
+		var setsarr=[];
+		//заполняем массив с фильтрами "возраст"
+		for(var y=0;y<document.getElementsByClassName('year').length;y++){
+			if(document.getElementsByClassName('year')[y].style.backgroundColor=="rgb(83, 80, 91)"){
+				yarr.push(document.getElementsByClassName('year')[y].id);
+			}
+		}
+		//заполняем массив с фильтрами "направление"
+		for(var y=0;y<document.getElementsByClassName('type').length;y++){
+			if(document.getElementsByClassName('type')[y].style.backgroundColor=="rgb(83, 80, 91)"){
+				tarr.push(document.getElementsByClassName('type')[y].id);
+			}
+		}
+		//заполняем массив с фильтрами "форма обучения"
+		for(var y=0;y<document.getElementsByClassName('study').length;y++){
+			if(document.getElementsByClassName('study')[y].style.backgroundColor=="rgb(83, 80, 91)"){
+				sarr.push(document.getElementsByClassName('study')[y].id);
+			}
+		}
+		//отображаем курсы согласно фильтру "возраст"
+		if(yarr.length==0){ //если возраст не выбран, выводим все курсы
+			for(var ii=0; ii<document.getElementsByClassName('box').length;ii++){
+					document.getElementsByClassName('box')[ii].style.display='block';
+				}
+		}else{ //иначе делаем отсев курсов по возрасту
+			for(var item=0;item<yarr.length;item++){
+				for(var y=0;y<document.getElementsByClassName('box').length;y++){
+					var classname=String(document.getElementsByClassName('box')[y].getAttribute('class'));
+					if(classname.indexOf(yarr[item])>-1){
+						document.getElementsByClassName('box')[y].style.display='block';
+					}
+				}
+			}
+		}
+		//в выборке по возрасту делаем фильтр на "направленность"
+		for(var item=0;item<tarr.length;item++){
+			for(var y=0;y<document.getElementsByClassName('box').length;y++){
+				if(document.getElementsByClassName('box')[y].style.display=='block'){
+					var classname=String(document.getElementsByClassName('box')[y].getAttribute('class'));
+
+					if(classname.indexOf(tarr[item])>-1){
+						//document.getElementsByClassName('box')[y].style.display='block';
+						settarr.push(document.getElementsByClassName('box')[y].id);
+					}
+				}
+			}
+		}
+
+	if(settarr.length==0 && tarr.length==0){
+	}else if(settarr.length==0 && tarr.length!=0){
+		//если среди курсов,проходящих по фильтру возраст, нет ни одно, удовлетворяющего фильтру направленность, то скрываем все курсы
+		for(var ii=0; ii<document.getElementsByClassName('box').length;ii++){
+				document.getElementsByClassName('box')[ii].style.display='none';
+			}
+		alert("К сожалению, мы не нашли курсы, удовлетворяющие всем фильтрам. Пожалуйста, задайте другие условия поиска.")
+		}else{
+		for(var y=0;y<document.getElementsByClassName('box').length;y++){
+			var findit=false;
+			if(document.getElementsByClassName('box')[y].style.display=='block'){
+				for(var item=0;item<settarr.length;item++){
+					if(document.getElementsByClassName('box')[y].id==settarr[item]){
+						findit=true;
+					}
+				}
+				if(findit==false){document.getElementsByClassName('box')[y].style.display='none'}
+			}
+		}
+	}
+		//в выборке по возрасту и направленности, делаем отсев на "форму обучения"
+		for(var item=0;item<sarr.length;item++){
+			for(var y=0;y<document.getElementsByClassName('box').length;y++){
+				if(document.getElementsByClassName('box')[y].style.display=='block'){
+					var classname=String(document.getElementsByClassName('box')[y].getAttribute('class'));
+					if(classname.indexOf(sarr[item])>-1){
+						setsarr.push(document.getElementsByClassName('box')[y].id);
+					}
+				}
+			}
+		}
+
+	if(setsarr.length==0 && sarr.length==0){
+	}else if(setsarr.length==0 && sarr.length!=0){
+			//если среди курсов,проходящих по фильтру возраст, нет ни одно, удовлетворяющего фильтру направленность, то скрываем все курсы
+			for(var ii=0; ii<document.getElementsByClassName('box').length;ii++){
+					document.getElementsByClassName('box')[ii].style.display='none';
+				}
+			alert("К сожалению, мы не нашли курсы, удовлетворяющие всем фильтрам. Пожалуйста, задайте другие условия поиска.")
+			}else{
+		for(var y=0;y<document.getElementsByClassName('box').length;y++){
+			var findit=false;
+			if(document.getElementsByClassName('box')[y].style.display=='block'){
+				for(var item=0;item<setsarr.length;item++){
+					if(document.getElementsByClassName('box')[y].id==setsarr[item]){
+						findit=true;
+					}
+				}
+				if(findit==false){document.getElementsByClassName('box')[y].style.display='none'}
+			}
+		}
+	}
+}
+</script>
+</body>
+</html>
