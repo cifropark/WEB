@@ -38,6 +38,20 @@ header{
 	width: 300px;
 	margin:10px 0px;
 }
+#enter{
+	margin: 10px 5px 0 0;
+	text-decoration: none;
+	display: block;
+	color:grey;
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	padding-top: 22px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#enter:hover{
+color: rgb(1,185,155);
+}
 
 nav{
 	height: 70px;
@@ -96,7 +110,6 @@ nav{
 	height: 150px;
 	width: 50px;
 	background: repeating-linear-gradient(0deg, #ffd700, #ffd700 5px, #FFFFFF 5px, #FFFFFF 10px);
-
 }
 #gradient2{
 	width: 250px;

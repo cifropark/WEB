@@ -37,23 +37,20 @@ header{
 	width: 300px;
 	margin:10px 0px;
 }
-
-/*.registration{
-	border-left: #808080 solid 1px;
-	position:absolute;
-	top:5px;
-	right:0;
-	height: 45px;
-	line-height: 20px;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.registration>a{
-	margin-left: 4px;
+#enter{
+	margin: 10px 5px 0 0;
 	text-decoration: none;
-	color: blue;
 	display: block;
-}*/
+	color:grey;
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	padding-top: 22px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#enter:hover{
+color: rgb(1,185,155);
+}
 
 nav{
 	height: 70px;
@@ -115,14 +112,13 @@ h3{
 	padding: 5px;
 	margin-left: 12px;
 	height: 13px;
-	line-height: 13px;/*для выравнивания текста по вертикали*/
+	line-height: 13px;
 	color: #000000;
 	font-family: sans-serif;
 	text-decoration: none;
 }
 .courses{
 	width: 1200px;
-	/*height: 1200px;*/
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -183,7 +179,7 @@ h3{
 	background-image: url(../img/travel.jpg);
 }
 .courses>div:nth-child(8) div{
-	background-image: url(../img/sport.jpg);
+	background-image: url(../img/yoga.jpg);
 }
 .courses>div:nth-child(9) div{
 	background-image: url(../img/psychology.jpg);

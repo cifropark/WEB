@@ -40,6 +40,20 @@ header{
 	margin:10px 0px;
 }
 
+#enter{
+	margin: 10px 5px 0 0;
+	text-decoration: none;
+	display: block;
+	color:grey;
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	padding-top: 22px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#enter:hover{
+color: rgb(1,185,155);
+}
 nav{
 	height: 70px;
 	background-color: rgb(83, 80, 91);
@@ -71,7 +85,7 @@ h1{
 	font-family: 'Amatic SC', sans-serif;
   font-size: 90px;
   text-align: center;
-  margin: 70px 0px 50px 0px;
+  margin: 70px 0px 60px 0px;
 }
 
 footer{
@@ -96,10 +110,10 @@ footer>p{
 
 .first, .second{
 	display: flex;
-	height: 300px;
+	height: 250px;
 }
 .second{
-	padding-bottom: 50px;
+	padding-bottom: 0px;
 }
 .photo1{
 	margin-left: 100px;
@@ -146,6 +160,9 @@ footer>p{
 	font-size: 20px;
 	padding-left: 10px;
 }
+.email>div a{
+	text-decoration: none;
+}
 #picture{
 	width: 40px;
 	height: 40px;
@@ -171,4 +188,14 @@ footer>p{
 
 .number>a{
 	text-decoration: none;
+}
+iframe{
+	margin-left: 150px;
+	padding-bottom: 150px;
+}
+.map>h1{
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	margin: 20px auto;
 }
