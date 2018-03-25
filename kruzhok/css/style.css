@@ -23,16 +23,6 @@ body{
 }
 
 header{
-	/*display: flex;
-	justify-content: space-between;
-
-	padding: 15px 0 5px 0;
-	font-family:'Amatic SC', cursive;
-	line-height: 30px;
-	font-size: 0.6em;
-	background-color: white;
-	height: 120px;
-	padding-left: 40px;*/
 	display: flex;
 	justify-content: flex-start;
 	height: 140px;
@@ -41,6 +31,10 @@ header{
 	z-index: 2;
 	top:0;
 	left: 0;
+}
+header>div:nth-child(3){
+	width: 500px;
+	margin-left: 200px;
 }
 #logo1{
 	background-image: url(../img/logo1.png);
@@ -66,9 +60,7 @@ header{
 	font-weight: bold;
 	margin-top: 10px;
 }
-#strogino-label{
-	/*display:flex;*/
-}
+
 #strogino-label>p:nth-child(2){
 padding-top: 20px;
 box-sizing: border-box;
@@ -84,20 +76,18 @@ font-size: 20px;
 }
 
 #enter{
-	margin: 10px 40px 0 0;
+	margin: 10px 5px 0 0;
 	text-decoration: none;
 	display: block;
 	color:grey;
 	text-align: right;
-	font-family:'Amatic SC', cursive;
+	font-family: 'Oswald', sans-serif;
 	padding-top: 22px;
-	font-size: 30px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 #enter:hover{
-background: linear-gradient(135deg, pink 20%, blue 70%);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
+color: rgb(1,185,155);
 }
 nav{
 	height: 70px;
@@ -257,7 +247,8 @@ nav{
 #apeal{
 	text-align: center;
 	font-size: 60px;
-	color:rgb(146,208,80);
+	/*color:rgb(146,208,80);*/
+	color:rgb(0,166,164);
 	font-family:'Amatic SC', cursive;
 	letter-spacing: 1.5;
 

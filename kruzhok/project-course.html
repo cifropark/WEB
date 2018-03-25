@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style9.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="lessons">
+    <div class="first">
+      <h2>1. Что такое проект?</h2>
+      <a href="#" onclick="part1()">Лекция</a>
+      <a href="#" onclick="part2()">Дополнительные материалы</a>
+      <a href="#">Тест</a>
+    </div>
+    <div class="second">
+      <h2>2. Prezi: создание презентации</h2>
+      <a href="#" onclick="part3()">Лекция</a>
+      <a href="#">Дополнительные материалы</a>
+      <a href="#">Творческий проект</a>
+    </div>
+    <div class="third">
+      <h2>3. Movavi: создание видеоролика </h2>
+      <a href="#">Лекция</a>
+      <a href="#">Дополнительные материалы</a>
+      <a href="#">Творческий проект</a>
+    </div>
+
+
+  </div>
+  <div id="workingspace">
+    <div id='video1'>
+      <video width="700" height="400" controls>
+        <source src="video/mindmapvideo.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div id='additional'>
+        <p>Ссылки на интернет-ресурсы, упомянутые в лекции:</p>
+        <p><a href="https://www.mindmeister.com">Mindmeister</a> - создание концептуальных карт</p>
+        <p><a href="https://prezi.com/">Prezi</a> - создание анимированных презентаций</p>
+    </div>
+  </div>
+
+  <script>
+    function part1(){
+      document.getElementById('additional').style.display='none';
+      document.getElementById('video1').style.display='block';
+
+    }
+    function part2(){
+      document.getElementById('video1').style.display='none'
+      document.getElementById('additional').style.display='block';
+    }
+    function part3(){
+      document.getElementById('additional').style.display='none';
+      document.getElementById('video1').style.display='none'
+
+    }
+  </script>
+</body>
+</html>

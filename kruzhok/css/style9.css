@@ -1,0 +1,53 @@
+@import url(reset.css);
+body{
+	font-family:	 sans-serif;
+	display: flex;
+	justify-content: flex-start;
+	background-color: #f2f2f2;
+}
+.lessons{
+	width: 400px;
+	border-right: 1px solid grey;
+}
+#workingspace{
+	width: 1100px;
+	height: 500px;
+	border-top: 1px solid grey;
+  padding: 20px;
+	border-right: 1px solid grey;
+}
+
+.first, .second, .third{
+	height: 90px;
+	border-top: 1px solid grey;
+	padding: 10px 5px;
+}
+.first>h2, .second>h2, .third>h2{
+	padding-top: 4px;
+	padding-left: 10px;
+	font-size: 20px;
+	padding-bottom: 8px;
+}
+.first>a, .second>a, .third>a{
+	padding-bottom: 3px;
+	padding: 3px 30px;
+	font-size: 15px;
+	text-decoration: none;
+	display: block;
+  color:black;
+}
+#video1{
+	margin: auto;
+	width: 700px;
+
+}
+#additional{
+	display: none;
+}
+#additional>p{
+	padding: 10px 10px;
+}
+#additional>p:nth-child(1){
+	font-size: 18px;
+	padding-top: 0px;
+}
